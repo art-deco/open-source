@@ -1,0 +1,20 @@
+{
+  "flex-grow|-ms-flex-positive": [
+    "1"
+  ],
+  "box-shadow": [
+    "none"
+  ],
+  "flex-basis|-ms-flex-preferred-size": [
+    "0"
+  ],
+  "display": [
+    "flex|-ms-flexbox"
+  ],
+  "flex-wrap|-ms-flex-wrap": [
+    "wrap"
+  ],
+  "box-sizing": [
+    "border-box"
+  ]
+}
