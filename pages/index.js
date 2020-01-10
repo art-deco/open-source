@@ -2,8 +2,8 @@
  * @type {import('splendid').Page}
  */
 export const index = {
-  title: 'OpenSource',
-  seo: 'The 150-160 characters search engine meta:description',
+  title: 'Open Source Vs Tech Nation',
+  seo: 'Open Source is a safe zone for people who like to code, but Tech Nation exploits its concept for their own agenda without giving anything back.',
   og: {
     image: '/img/logo.jpg',
   },
