@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin>
     <link href="https://fonts.googleapis.com/css?family=Source%20Code%20Pro" rel="preload" as="style">
     <script>
-      (function(b){var a=document.createElement("link");a.href=b;a.rel="stylesheet";a.crossOrigin="crossorigin";document.head.appendChild(a)})('https://fonts.googleapis.com/css?family=Source%20Code%20Pro')
+      (function (b){var a=document.createElement("link");a.href=b;a.rel="stylesheet";a.crossOrigin="crossorigin";document.head.appendChild(a)})('https://fonts.googleapis.com/css?family=Source%20Code%20Pro')
     </script>
     <style id="cpt">
       
@@ -37,10 +37,10 @@
       
     </style>
     <script>
-      (function(){var b=/url\('([\s\S]+?)'\)/.exec(document.head.querySelector("#cpt").textContent);if(b){var a=document.createElement("link");a.rel="preload";a.as="font";a.href=b[1];document.head.appendChild(a)}})()
+      (function (){var b=/url\('([\s\S]+?)'\)/.exec(document.head.querySelector("#cpt").textContent);if(b){var a=document.createElement("link");a.rel="preload";a.as="font";a.href=b[1];document.head.appendChild(a)}})()
     </script>
-    <script>(function(h,r){var a=Object.keys(h),c=!0;"CSS"in window&&"supports"in CSS?(a=a.reduce(function(k,b){var l=h[b];b=b.split("|");for(var m=!1,d={},f=0;f<b.length;d={a:d.a},f++)if(d.a=b[f],l.map(function(n){return function(e){e=e.split("|");for(var p=!1,g=0;g<e.length;g++){var q=e[g];if(CSS.supports(n.a,q)){p=!0;break}else k.push(n.a+": "+q)}return p}}(d)).filter(Boolean).length==l.length){m=!0;break}m||(c=!1);return k},[]),a.length?c&&console.log("\ud83d\udcbf Browser does not support CSS properties: %s",
-a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser supports all modern CSS properties.")):(c=!1,console.log("\ud83d\udce0 Browser does not support CSS checks."));c||(a=document.createElement("link"),a.rel="stylesheet",a.href=r,document.head.appendChild(a))})({"flex-grow|-ms-flex-positive":["1"],"flex|-ms-flex":["0 0 50%"],"display":["flex|-ms-flexbox"],"box-sizing":["border-box"],"flex-direction|-ms-flex-direction":["column"],"animation":["inner-circles-loader 3s infinite"],"border-radius":["50%"],"box-shadow":["none"],"transform":["rotate(0deg)"],"flex-basis|-ms-flex-preferred-size":["0"],"hyphens|-webkit-hyphens|-ms-hyphens":["auto"],"flex-wrap|-ms-flex-wrap":["wrap"],"flex-shrink|-ms-flex-negative":["0"],"transform-origin":["0 50%"]}, '/open-source/css/combined-prefixes.css')</script>
+    <script>(function (h,r){var a=Object.keys(h),c=!0;"CSS"in window&&"supports"in CSS?(a=a.reduce(function(k,b){var l=h[b];b=b.split("|");for(var m=!1,d={},f=0;f<b.length;d={a:d.a},f++)if(d.a=b[f],l.map(function(n){return function(e){e=e.split("|");for(var p=!1,g=0;g<e.length;g++){var q=e[g];if(CSS.supports(n.a,q)){p=!0;break}else k.push(n.a+": "+q)}return p}}(d)).filter(Boolean).length==l.length){m=!0;break}m||(c=!1);return k},[]),a.length?c&&console.log("\ud83d\udcbf Browser does not support CSS properties: %s",
+a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser supports all modern CSS properties.")):(c=!1,console.log("\ud83d\udce0 Browser does not support CSS checks."));c||(a=document.createElement("link"),a.rel="stylesheet",a.href=r,document.head.appendChild(a))})({"flex-grow|-ms-flex-positive":["1"],"flex|-ms-flex":["0 0 50%"],"display":["flex|-ms-flexbox"],"box-sizing":["border-box"],"flex-direction|-ms-flex-direction":["column"],"animation":["inner-circles-loader 3s infinite"],"border-radius":["50%"],"box-shadow":["none"],"transform":["rotate(0deg)"],"flex-basis|-ms-flex-preferred-size":["0"],"hyphens|-webkit-hyphens|-ms-hyphens":["auto"],"justify-content":["center"],"flex-wrap|-ms-flex-wrap":["wrap"],"flex-shrink|-ms-flex-negative":["0"],"align-items":["center"],"transform-origin":["0 50%"]}, '/open-source/css/combined-prefixes.css')</script>
     <script>
       (function(q,k){function x(a){for(var f=/url\((.+?)\).*?;\s+unicode-range: (.+?);/g,b={},d=[],h;h=f.exec(a);){var r=h[2];d.push({url:h[1],a:r});b[r]=1}b=Object.keys(b).reduce(function(c,e){var g=e.split(/,\s/).map(function(l){return l.replace("U+","\\u").replace("-","-\\u")}).join("").toLowerCase();c[e]=new RegExp("["+g+"]");return c},{});var t=document.body?document.body.textContent:"",y=t?Object.keys(b).reduce(function(c,e){b[e].test(t)&&(c[e]=!0);return c},{}):Object.keys(b).reduce(function(c,
       e){e in k&&(c[e]=!0);return c},{});m=d.filter(function(c){return c.a in y}).map(function(c){return c.url});if(!m.length)return u();var v=document.createDocumentFragment();m.forEach(function(c,e){var g=document.createElement("link");g.href=c;g.rel="preload";g.as="font";var l=e+1;;g.onload=function(){return u(l)};g.setAttribute("crossorigin",!0);v.appendChild(g)});document.head.appendChild(v)}k=void 0===k?{}:k;var n=document.createElement("link");if(function(a,
@@ -82,9 +82,9 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
                 <img class="ImageHolder b-t b-vk" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 510px,(max-width: 991.8px) 150px,(max-width: 1199.8px) 210px,255px" alt="@artdeco/open-source logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'/%3E">
                 <noscript>
                   <picture>
-                    <source srcset="img/splash-576.webp 576w,img/splash-319.webp 319w"
+                    <source srcset="img/splash-576.webp 576w,img/splash-319.webp 319w,img/splash-600.webp 600w"
                       sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 510px,(max-width: 991.8px) 150px,(max-width: 1199.8px) 210px,255px" type="image/webp">
-                    <img class="b-t b-vk" onLoad="webploaded(this)" alt="@artdeco/open-source logo" src="/open-source/img/splash-576.jpg" srcset="img/splash-576.jpg 576w,img/splash-319.jpg 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 510px,(max-width: 991.8px) 150px,(max-width: 1199.8px) 210px,255px">
+                    <img class="b-t b-vk" onLoad="webploaded(this)" alt="@artdeco/open-source logo" src="/open-source/img/splash-576.jpg" srcset="img/splash-576.jpg 576w,img/splash-319.jpg 319w,img/splash-600.jpg 600w" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 510px,(max-width: 991.8px) 150px,(max-width: 1199.8px) 210px,255px">
                   </picture>
                 </noscript>
               </div>
@@ -125,14 +125,14 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
             </p>
             
             <div class="b-B">
-              <div class="b-W b-ib">
-                <img class="ImageHolder b-xq b-t" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 240px,(max-width: 991.8px) 149px,(max-width: 1199.8px) 208px,253px" alt="back of the head" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2448' height='3264'/%3E">
+              <div class="b-Mk b-bm b-gm b-W b-ib">
+                <img class="ImageHolder b-vk b-xq b-t" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 240px,(max-width: 991.8px) 149px,(max-width: 1199.8px) 208px,253px" alt="back of the head" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2448' height='3264'/%3E">
                 <noscript>
                   <picture>
                     <source
                       srcset="pages/index/i-1140.webp 1140w,pages/index/i-768.webp 768w,pages/index/i-576.webp 576w,pages/index/i-319.webp 319w"
                       sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 240px,(max-width: 991.8px) 149px,(max-width: 1199.8px) 208px,253px" type="image/webp">
-                    <img class="b-xq b-t" onLoad="webploaded(this)" alt="back of the head" src="/open-source/pages/index/i-1140.jpg" srcset="pages/index/i-1140.jpg 1140w,pages/index/i-768.jpg 768w,pages/index/i-576.jpg 576w,pages/index/i-319.jpg 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 240px,(max-width: 991.8px) 149px,(max-width: 1199.8px) 208px,253px">
+                    <img class="b-vk b-xq b-t" onLoad="webploaded(this)" alt="back of the head" src="/open-source/pages/index/i-1140.jpg" srcset="pages/index/i-1140.jpg 1140w,pages/index/i-768.jpg 768w,pages/index/i-576.jpg 576w,pages/index/i-319.jpg 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 240px,(max-width: 991.8px) 149px,(max-width: 1199.8px) 208px,253px">
                   </picture>
                 </noscript>
               </div>
@@ -142,7 +142,7 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
               </div>
             </div>
             
-            <p>The problem I guess is my <strong>perception</strong> that boards are hostile, especially specialised once. Everyone thinks they are the smartest (I know it's not true but it's kind of true), and you for some reason have to go and prove something to them. Developers especially, they have their own little schemes going on, I don't think they give a crap when you try to explain them something. Internet is not a place where friends chat, not for me. At work, I quit Slack because I hated it. I love to proper talk, or write, but you never find me on Facebook or Twitter. Sometimes I get monthly+ no-email streaks because of anxiety of receiving a reply for anything. I'm really afraid of receiving responses because I don't know what they will say. The only nice thing is receiving some claps on medium, they are always safe. That's the only positive thing about internet. I know things are not so bad, like I found an article on Gizmodo the other day, and there were some really nice thoughtful comments there, but generally subconsciously I'm not fully OK with having any kind of "profile".</p>
+            <p>The problem I guess is my <strong>perception</strong> that boards are hostile, especially specialised once. Everyone thinks they are the smartest (I know it's not true but it's kind of true), and you for some reason have to go and prove something to them. Developers especially, they have their own little schemes going on, I don't think they give a crap when you try to explain them something. Internet is not a place where friends chat, not for me. At work, I quit Slack because I hated it. I love to proper talk, or write, but you never find me on Facebook or Twitter. Man I can't even listen to most of whatsapp audios... And I don't think I'm alone in this. Sometimes I get monthly+ no-email streaks because of anxiety of receiving a reply for anything. I'm really afraid of receiving responses because I don't know what they will say, which is not the case in normal conversation when people just talk to you. I might message somebody and then stay away from the phone for a couple of days then realise it's kind of mean and apologize for ghosting, but a few months later. The only nice thing is receiving some claps on medium, they are always safe. That's the only positive thing about the internet. I know things are not so bad, like I found an article on Gizmodo the other day, and there were some really nice thoughtful comments there, but generally subconsciously I'm not fully OK with having any kind of "online profile".</p>
             
             <p>But is it bad? To be honest, a person with a "profile" can receive thousands of likes for a tweet about scratching his arse. People just procrastinate on Twitter, consuming mindless content. Not always, there are tweets that really do help to discover opportunities. Still I prefer to work. I love programming. I love Web Computing. I love Node.JS. I'm fluent in <em>JavaScript</em> and I'm able to communicate my ideas with it. All of my time I spend working on my packages, which I've made 205 in a number of GitHub orgs. I founded a business, that I wanted to be an Open Source company, but Tech Nation wants to kill it, because instead of assessing my JavaScript, they want to assess what I mean for people whom I never met in my life.</p>
             
@@ -174,7 +174,7 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
             
             <p>This approach to applicants is not fair and is bigoted. No one should be discriminated against by their "community profile". But what is more, is that Tech Nation has done nothing to help people who might be like me, to maybe assist in networking or just general support, yet they spend all their time creating reports about the tech sector in the UK, and running programs for Close Source enterprises, which are run by their directors. Tech Nation are bullies who have no respect or kindness to young people in technology industry, and they are using Open Source only for their own aim without giving anything in return. Let's get together and prove them that <em>Open Source</em> is not something that can be invoked to punish Open Source developers who build it.</p>
             
-            <p>Any community consists of 1% of people who create, 10% of people who disseminate and 89% of people who consume. The 10% are people with the profile, but the packages that the 1% creates, are much stronger evidence of contribution. NPM does not encourage package creators, because their search is also skewed towards popularity and a really good package can be on a page 1000. There's also no Open Source office, where everyone can come in and hand in their work. Therefore one is left with trying to find the reddits, newsletters, <em>etc</em>. All my negativity would eventually dissipate when I start doing it and realise it's  alright and fun, but I want to prove that it is the skill and actual releases to Open Source that count 10000 more than any tweet by any influencer, and to discriminate against people who contribute their intellectual capacity to Open Source for not being known, is simply unethical.</p>
+            <p>Any community consists of 1% of people who create and 10% of people who disseminate. The 10% are people with the profile, but the packages that the 1% creates, are much stronger evidence of contribution. NPM does not encourage package creators, because their search is also skewed towards popularity and a really good package can be on a page 1000. There's also no Open Source office, where everyone can come in and hand in their work. Therefore one is left with trying to find the reddits, newsletters, <em>etc</em>. All my negativity would eventually dissipate when I start doing it and realise it's  alright and fun, but I want to prove that it is the skill and actual releases to Open Source that count 10000 more than any tweet by any influencer, and to discriminate against people who contribute their intellectual capacity to Open Source for not being known, is simply unethical.</p>
             
             
             
@@ -193,7 +193,7 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
             
             <p>My affection for my guest increases every day. He excites at once my admiration and my pity to an astonishing degree. How can I see so noble a creature destroyed by misery without feeling the most poignant grief?</p>
             
-            <p>He is so gentle, yet so wise; his mind is so cultivated, and when he speaks, although his words are culled with the choicest art, yet they flow with rapidity and  <a href="https://www.gutenberg.org/files/84/84-h/84-h.htm">unparalleled eloquence</a>.</p>
+            <p>He is so gentle, yet so wise; his mind is so cultivated, and when he speaks, although his words are culled with the choicest art, yet they flow with rapidity and  <a href="/open-source/gutenberg">unparalleled eloquence</a>.</p>
             
             <p>Such <strong>words</strong>, you may imagine, strongly excited my curiosity;</p>
             but the <em>paroxysm</em> of grief that had seized the stranger overcame
@@ -213,6 +213,6 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
     <footer class="b-ns">
       &copy; <a href="https://www.artd.eco">Art Deco™</a>, 2020
     </footer>
-    <script>(function(){function b(){if(0<c.length){var a=c.shift();a.src=a.getAttribute("data-src");a.removeAttribute("data-src");a.onload=b;a.onerror=function(){console.warn("Could not load script %s",a.src)}}}var c=Array.prototype.slice.call(document.querySelectorAll("script[data-src]"));b()})()</script>
+    <script>(function (){function b(){if(0<c.length){var a=c.shift();a.src=a.getAttribute("data-src");a.removeAttribute("data-src");a.onload=b;a.onerror=function(){console.warn("Could not load script %s",a.src)}}}var c=Array.prototype.slice.call(document.querySelectorAll("script[data-src]"));b()})()</script>
   </body>
 </html>

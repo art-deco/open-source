@@ -59,6 +59,12 @@
 .flex-shrink-0 {
   -webkit-flex-shrink: 0 !important;
 }
+.justify-content-center {
+  -webkit-justify-content: center !important;
+}
+.align-items-center {
+  -webkit-align-items: center !important;
+}
 @media print {
   * {
     -webkit-box-shadow: none !important;
