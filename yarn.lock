@@ -42,6 +42,34 @@
   resolved "https://registry.yarnpkg.com/@lemuria/popup/-/popup-1.1.1.tgz#95fe588e83648450d140dccd333c77aff8b5c01c"
   integrity sha512-biZJo/R63BDV47xhGxwIMPSj05S1Ekv9o5EZyTyd6fTQ9rQv3y1VIPCWEZdXNwZPNpzfO8KMeAy6FOtK3cwRIQ==
 
+"@svag/lib@2.0.0", "@svag/lib@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@svag/lib/-/lib-2.0.0.tgz#8cf60690eed5d361eb8fad482592504a71335292"
+  integrity sha512-TkGBu4p7iAFI8wmYbadCr0YvxLov+q3Bzm+ksuHzla+rHF4utOg9xLmM57fYpApZROetji9ErcjCcl32II1ETg==
+
+"@svag/shadow@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@svag/shadow/-/shadow-2.0.1.tgz#678064c63ea7ca59271b544f794e73d3f87dc8bf"
+  integrity sha512-9jkvzb8QgXSQRKgJxpjtWVcTd1m/Z9O27+xaWCyyxSplwrufptppKpbkfV7sWPoVUhqfWEPhsR1RkYJjGsRP4w==
+  dependencies:
+    "@svag/lib" "2.0.0"
+
+"@svag/toolbar@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@svag/toolbar/-/toolbar-1.0.1.tgz#103395665189fa6f2bfc8c7bdd95611ad18b9ac4"
+  integrity sha512-bLvRNt4VJDKziVCZVlf/LVRhF4Q5M3HVIvWEGkbMKTqGDUlqNspDQfhUHLahCvlrAh27SQqfVkdGMMh2XGfbuQ==
+  dependencies:
+    "@svag/lib" "2.0.0"
+
+"@svag/window@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@svag/window/-/window-1.1.1.tgz#7ac7fb24375556be74c420a7885bb6dce675dac2"
+  integrity sha512-JQhNQvKiyFAxMAQ+Fc7tWyNG1twCuqqCziYZQZDzn/s7P5wYkM1AXNHqNYCwRSy4nKE13mKgAF+WTGYHeEQdQA==
+  dependencies:
+    "@svag/lib" "2.0.0"
+    "@svag/shadow" "2.0.1"
+    "@svag/toolbar" "1.0.1"
+
 "@zoroaster/assert@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@zoroaster/assert/-/assert-1.0.2.tgz#8ffe2ebb10c81d570d4965080f942af688321a1f"
