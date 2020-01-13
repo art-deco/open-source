@@ -24,7 +24,9 @@
       (function (b){var a=document.createElement("link");a.href=b;a.rel="stylesheet";a.crossOrigin="crossorigin";document.head.appendChild(a)})('https://fonts.googleapis.com/css?family=Source%20Code%20Pro')
     </script>
     <style id="cpt">
-      h1 { font-family: 'Squada One' }
+      
+        h1 { font-family: 'Squada One' }
+    
       @font-face {
         font-family: 'Squada One';
         font-style: normal;
@@ -38,7 +40,7 @@
       (function (){var b=/url\('([\s\S]+?)'\)/.exec(document.head.querySelector("#cpt").textContent);if(b){var a=document.createElement("link");a.rel="preload";a.as="font";a.href=b[1];document.head.appendChild(a)}})()
     </script>
     <script>(function (h,r){var a=Object.keys(h),c=!0;"CSS"in window&&"supports"in CSS?(a=a.reduce(function(k,b){var l=h[b];b=b.split("|");for(var m=!1,d={},f=0;f<b.length;d={a:d.a},f++)if(d.a=b[f],l.map(function(n){return function(e){e=e.split("|");for(var p=!1,g=0;g<e.length;g++){var q=e[g];if(CSS.supports(n.a,q)){p=!0;break}else k.push(n.a+": "+q)}return p}}(d)).filter(Boolean).length==l.length){m=!0;break}m||(c=!1);return k},[]),a.length?c&&console.log("\ud83d\udcbf Browser does not support CSS properties: %s",
-a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser supports all modern CSS properties.")):(c=!1,console.log("\ud83d\udce0 Browser does not support CSS checks."));c||(a=document.createElement("link"),a.rel="stylesheet",a.href=r,document.head.appendChild(a))})({"flex-grow|-ms-flex-positive":["1"],"flex|-ms-flex":["0 0 50%"],"display":["flex|-ms-flexbox"],"box-sizing":["border-box"],"flex-direction|-ms-flex-direction":["column"],"animation":["inner-circles-loader 3s infinite"],"border-radius":["50%"],"box-shadow":["none"],"transform":["rotate(0deg)"],"flex-basis|-ms-flex-preferred-size":["0"],"hyphens|-webkit-hyphens|-ms-hyphens":["auto"],"justify-content":["center"],"flex-wrap|-ms-flex-wrap":["wrap"],"flex-shrink|-ms-flex-negative":["0"],"align-items":["center"],"transform-origin":["0 50%"]}, '/open-source/css/combined-prefixes.css')</script>
+a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser supports all modern CSS properties.")):(c=!1,console.log("\ud83d\udce0 Browser does not support CSS checks."));c||(a=document.createElement("link"),a.rel="stylesheet",a.href=r,document.head.appendChild(a))})({"flex-grow|-ms-flex-positive":["1"],"flex|-ms-flex":["0 0 25%"],"display":["flex|-ms-flexbox"],"box-sizing":["border-box"],"flex-direction|-ms-flex-direction":["column"],"animation":["inner-circles-loader 3s infinite"],"border-radius":["50%"],"box-shadow":["none"],"transform":["rotate(0deg)"],"flex-basis|-ms-flex-preferred-size":["0"],"hyphens|-webkit-hyphens|-ms-hyphens":["auto"],"justify-content":["center"],"flex-wrap|-ms-flex-wrap":["wrap"],"flex-shrink|-ms-flex-negative":["0"],"align-items":["center"],"transform-origin":["0 50%"]}, '/open-source/css/combined-prefixes.css')</script>
     <script>
       (function(q,k){function x(a){for(var f=/url\((.+?)\).*?;\s+unicode-range: (.+?);/g,b={},d=[],h;h=f.exec(a);){var r=h[2];d.push({url:h[1],a:r});b[r]=1}b=Object.keys(b).reduce(function(c,e){var g=e.split(/,\s/).map(function(l){return l.replace("U+","\\u").replace("-","-\\u")}).join("").toLowerCase();c[e]=new RegExp("["+g+"]");return c},{});var t=document.body?document.body.textContent:"",y=t?Object.keys(b).reduce(function(c,e){b[e].test(t)&&(c[e]=!0);return c},{}):Object.keys(b).reduce(function(c,
       e){e in k&&(c[e]=!0);return c},{});m=d.filter(function(c){return c.a in y}).map(function(c){return c.url});if(!m.length)return u();var v=document.createDocumentFragment();m.forEach(function(c,e){var g=document.createElement("link");g.href=c;g.rel="preload";g.as="font";var l=e+1;;g.onload=function(){return u(l)};g.setAttribute("crossorigin",!0);v.appendChild(g)});document.head.appendChild(v)}k=void 0===k?{}:k;var n=document.createElement("link");if(function(a,
@@ -48,6 +50,15 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
     <link rel="stylesheet" href="/open-source/css/combined.css">
     <style>
       .no-js [data-io], .no-js .ImageHolder, .no-js [data-loading] { display: none!important }
+      .tm {
+          hyphens: none;
+        }
+        .Criterion {
+          background-color: aliceblue;
+        }
+        .Criterion:hover {
+          opacity: 1 !important;
+        }
     </style>
     <noscript>
       <link rel="stylesheet"
@@ -61,6 +72,7 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
     <script defer src="/open-source/js/images.js"></script>
     <script defer src="/open-source/js/ajax-loader.js"></script>
     <script crossorigin data-src="/open-source/preact/dist/preact.min.js"></script>
+    <script crossorigin data-src="/open-source/comps/common.js"></script>
     <script crossorigin data-src="/open-source/comps/index.js"></script>
     <script>
       window.addEventListener('DOMContentLoaded', function(){window.AjaxLoader({ root: '/open-source' })})
@@ -94,11 +106,12 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
                 
                 <a
                   title="Static Web Site Compiler That Uses Closure Compiler For JS Bundling And Closure Stylesheets For CSS optimisations. Supports JSX Syntax To Write Static Elements And Dynamic Preact Components." class="NPMBadge" href="https://www.npmjs.com/package/splendid">
-                  <span class="a"><em>Splendid</em></span><span class="b">1.16.9</span></a>
+                  <span class="a"><em>Splendid</em></span><span class="b">1.16.10</span></a>
               </div>
               <h3 id="pages">Pages</h3>
             <ul class="AjaxNav">
               <li class="Active"><a data-file="index" href="/open-source/">Open Source Vs Tech Nation</a></li>
+              <li class><a data-file="letter" href="/open-source/letter-of-claim.html">Letter of Claim</a></li>
             </ul>
             <ul></ul>
             <span class="b-xq b-Hk" id="c7d80"><span class="b-Hk" style="height:32px" data-loading>Loading sharing buttons...</span><noscript>Please enable JavaScript to Share</noscript></span>
@@ -109,9 +122,20 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
             
             <h1 id="open-source-vs-tech-nation">Open Source Vs Tech Nation</h1>
             
-            <p>Hi, my name is Anton and I'm an Open Source developer which is one of the hardest jobs in the world. There's no stable (or any) income, trade union or a social institute of "Open Source" that could provide assistance. We are left to our own devices, yet the whole world capitalizes on our good intentions and inventions. One of companies that thought that it could have its cake and eat it too, is Tech Nation from the UK. They are 80% publicly funded company (£5m annual income from the ministry of culture) with the aim of encouraging the growth of the tech sector, yet they have not spent a penny to help Open Source developers.</p>
+            <div class="b-B b-xq b-dC" style="border-bottom: 1px dashed grey; background: linear-gradient(180deg, #e5fcff, white);">
+              <div class="b-T b-gb">
+                <img class="b-t" alt="anton photo" data-io>
+                <noscript><img class="b-t" alt="anton photo" src="/open-source/pages/index/img/light.jpg"></noscript>
+              </div>
+              <div class="b-D">
+                <p>This is a continuation of the <span style="font-size: large;"><a href="https://medium.com/@art_deco/2654d6cdc43f#9925">
+              <em><strong>My Name Is Anton, And I’m a Victim of a Psychopath</strong>. For the love of Open Source, you have to help me.</em></a></span> article. Please refer to the original blog post for more information and background.</p>
+              </div>
+            </div>
             
-            <p>All their programs are directed towards companies that receive vendor capital, and no effort on their part is made to back Open Source, either through education, networking or some kind of mentor (like simple "come in for a chat") channels. At the same time, they claim to be an "endorsing body" for a prestigious Tier 1 Exceptional Talent visa &mdash; where they basically require people to work on their "community profile" for free because Tech Nation is not able to understand any technical details and wants the community to do this job for them. <em>Tech Nation</em> has no idea about challenges independent developers face, but at the same time they feel entitled to come up with any random bullshit during the decision process and then hide behind the name of the community.</p>
+            <p>Hi, I'm <span class="tm">zavr</span> and I'm an Open Source developer which is one of the hardest jobs in the world. There's no stable (or any) income, trade union or a social institute of "Open Source" that could provide assistance. We are left to our own devices, yet the whole world capitalizes on our good intentions and inventions. One of companies that thought that it could have its cake and eat it too, is Tech Nation from the UK. They are 80% publicly funded company (£5m annual sponsorship from the ministry of culture) with the aim of encouraging the growth of the tech sector, yet they have not spent a penny to help Open Source developers.</p>
+            
+            <p>All their programs are directed towards companies that receive vendor capital, and no effort on their part is made to back Open Source, either through education, networking or some kind of mentoring (like simple "come in for a chat") channels. At the same time, they claim to be an "endorsing body" for a prestigious Tier 1 Exceptional Talent visa &mdash; where they basically require people to work on their "community profile" for free because Tech Nation is not able to understand any technical details and wants the community to do this job for them. <em>Tech Nation</em> has no idea about challenges independent developers face, but at the same time they feel entitled to come up with any random bullshit during the decision process and then hide behind the name of the community.</p>
             
             
             
@@ -144,13 +168,13 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
             
             <p>But is it bad? To be honest, a person with a "profile" can receive thousands of likes for a tweet about scratching his arse. People just procrastinate on Twitter, consuming mindless content. Not always, there are tweets that really do help to discover opportunities. Still I prefer to work. I love programming. I love Web Computing. I love Node.JS. I'm fluent in <em>JavaScript</em> and I'm able to communicate my ideas with it. All of my time I spend working on my packages, which I've made 205 in a number of GitHub orgs. I founded a business, that I wanted to be an Open Source company, but Tech Nation wants to kill it, because instead of assessing my JavaScript, they want to assess what I mean for people whom I never met in my life.</p>
             
-            <img class="ImageHolder b-t b-jq" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 540px,(max-width: 1199.8px) 720px,855px" alt="github contributions" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='948' height='223'/%3E">
+            <img class="ImageHolder b-t b-jq" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 540px,(max-width: 1199.8px) 720px,855px" alt="github contributions" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='948' height='223'/%3E">
             <noscript>
               <picture>
                 <source
-                  srcset="pages/index/img/github-768.webp 768w,pages/index/img/github-576.webp 576w,pages/index/img/github-319.webp 319w,pages/index/img/github-948.webp 948w" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 540px,(max-width: 1199.8px) 720px,855px"
+                  srcset="pages/index/img/github-768.webp 768w,pages/index/img/github-576.webp 576w,pages/index/img/github-319.webp 319w,pages/index/img/github-948.webp 948w" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 540px,(max-width: 1199.8px) 720px,855px"
                   type="image/webp">
-                <img class="b-t b-jq" onLoad="webploaded(this)" alt="github contributions" src="/open-source/pages/index/img/github-768.png" srcset="pages/index/img/github-768.png 768w,pages/index/img/github-576.png 576w,pages/index/img/github-319.png 319w,pages/index/img/github-948.png 948w" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 540px,(max-width: 1199.8px) 720px,855px">
+                <img class="b-t b-jq" onLoad="webploaded(this)" alt="github contributions" src="/open-source/pages/index/img/github-768.png" srcset="pages/index/img/github-768.png 768w,pages/index/img/github-576.png 576w,pages/index/img/github-319.png 319w,pages/index/img/github-948.png 948w" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 540px,(max-width: 1199.8px) 720px,855px">
               </picture>
             </noscript>
             
@@ -158,21 +182,31 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
             
             <p>But it pisses me off so much. Skill level does not depend on how many people are following you on twitter, or how many downloads you have. For many people, it is their skill that is central to their self-worth, and endorsing bodies in technology need to understand it and appreciate the real effort that people put in. Open Source is not just community. Open Source is open to interpretation and for everyone it can be what they like. For me, it is what allowed me to cope with some really stressful shit in life. When I felt horrible, I knew that I had my laptop, my IDE and my Node, but I didn't have any community. <em>Open Source</em> via GitHub and NPM allowed me not to shut off completely, while also helping to accumulate a portfolio of packages and express creativity in form of package names, tidy documentation styles and innovative ways to write tests. Package making is an artistic process.</p>
             
-            <img class="ImageHolder b-t b-xq" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 540px,(max-width: 1199.8px) 720px,855px" alt="software typography" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2968' height='1668'/%3E">
+            <img class="ImageHolder b-t b-xq" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 540px,(max-width: 1199.8px) 720px,855px" alt="software typography" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2968' height='1668'/%3E">
             <noscript>
               <picture>
                 <source
-                  srcset="pages/index/img/software-1140.webp 1140w,pages/index/img/software-768.webp 768w,pages/index/img/software-576.webp 576w,pages/index/img/software-319.webp 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 540px,(max-width: 1199.8px) 720px,855px"
+                  srcset="pages/index/img/software-1140.webp 1140w,pages/index/img/software-768.webp 768w,pages/index/img/software-576.webp 576w,pages/index/img/software-319.webp 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 540px,(max-width: 1199.8px) 720px,855px"
                   type="image/webp">
-                <img class="b-t b-xq" onLoad="webploaded(this)" alt="software typography" src="/open-source/pages/index/img/software-1140.JPG" srcset="pages/index/img/software-1140.JPG 1140w,pages/index/img/software-768.JPG 768w,pages/index/img/software-576.JPG 576w,pages/index/img/software-319.JPG 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 767.8px) 540px,(max-width: 1199.8px) 720px,855px">
+                <img class="b-t b-xq" onLoad="webploaded(this)" alt="software typography" src="/open-source/pages/index/img/software-1140.JPG" srcset="pages/index/img/software-1140.JPG 1140w,pages/index/img/software-768.JPG 768w,pages/index/img/software-576.JPG 576w,pages/index/img/software-319.JPG 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 540px,(max-width: 1199.8px) 720px,855px">
               </picture>
             </noscript>
             
             <p>A community profile is not taught at university. A community profile is a job of a marketer and I'm not against it, but it's a separate business operation that needs its own approach. After I've formed my essential software products, I can start talking about them through articles and engagements with people. But if Tech Nation wanted to assess my application, they had to look at the quality of code, documentation and tests that I produced, my ideas for the company that I outlined and my other achievements in life such as a degree in Computer Science and AI and in Computer Security and my senior role. Education is extremely expensive, yet I'm told that to receive their endorsement, I need to have a "profile" which is feasible even with "limited experience". ****<strong> </strong>***</p>
             
-            <p>This approach to applicants is not fair and is bigoted. No one should be discriminated against by their "community profile". But what is more, is that Tech Nation has done nothing to help people who might be like me, to maybe assist in networking or just general support, yet they spend all their time creating reports about the tech sector in the UK, and running programs for Close Source enterprises, which are run by their directors. Tech Nation are bullies who have no respect or kindness to young people in technology industry, and they are using Open Source only for their own aim without giving anything in return. Let's get together and prove them that <em>Open Source</em> is not something that can be invoked to punish Open Source developers who build it.</p>
+            <p>This approach to applicants is not fair and is bigoted. No one should be discriminated against because of their popularity. But what is more, is that Tech Nation has done nothing to help people who might be like me, to maybe assist in networking or just general support, yet they spend all their time creating reports about the tech sector in the UK, and running programs for Close Source enterprises, which are run by their directors. Tech Nation are bullies who have no respect or kindness to young people in technology industry, and they are using Open Source only for their own aim without giving anything in return. Let's get together and prove them that <em>Open Source</em> is not something that can be invoked to punish Open Source developers who build it.</p>
             
-            <p>Any community consists of 1% of people who create and 10% of people who disseminate. The 10% are people with the profile, but the packages that the 1% creates, are much stronger evidence of contribution. NPM does not encourage package creators, because their search is also skewed towards popularity and a really good package can be on a page 1000. There's also no Open Source office, where everyone can come in and hand in their work. Therefore one is left with trying to find the reddits, newsletters, <em>etc</em>. All my negativity would eventually dissipate when I start doing it and realise it's  alright and fun, but I want to prove that it is the skill and actual releases to Open Source that count 10000 more than any tweet by any influencer, and to discriminate against people who contribute their intellectual capacity to Open Source for not being known, is simply unethical.</p>
+            <div class="b-B b-bk b-xq">
+              <div class="b-kC b-D">
+                <img class="b-t" alt="a triangle: 1% creators 10% synthesizers 100% consumers" data-io>
+                <noscript>
+                  <img class="b-t" alt="a triangle: 1% creators 10% synthesizers 100% consumers" src="/open-source/pages/index/img/triangle.png">
+                </noscript>
+                <p>Bradley Horowitz (vice president of product management at Google) makes a distinction among creators, synthesizers, and consumers. <small class="b-dC">(Building Web Reputation Systems, Randall Farmer and Bryce Glass; O’Reilly Media 2010).</small></p>
+              </div>
+            </div>
+            
+            <p>Any community consists of 1% of people who create and 10% of people who disseminate. The 10% are people with the profile, but the packages that the 1% creates, are much stronger evidence of contribution. NPM does not encourage package creators either, because their search is also skewed towards popularity and a really good package can be on a page 1000. There's also no Open Source office, where everyone can come in and hand in their work. Therefore one is left with trying to find the reddits, newsletters, <em>etc</em>. All my negativity would eventually dissipate when I start doing it and realise it's  alright and fun, but I want to prove that it is the skill and actual releases to Open Source that count 10000 more than any tweet by any influencer, and to discriminate against people who contribute their intellectual capacity to Open Source for not being known, is simply unethical.</p>
             
             
             
@@ -187,16 +221,87 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
                 <noscript><img alt="section break" src="/open-source/section-breaks/1.svg"></noscript></a>
             </p>
             
-            <h2 id="introduction">Introduction</h2>
+            <h2 id="criteria">Criteria</h2>
             
-            <p>My affection for my guest increases every day. He excites at once my admiration and my pity to an astonishing degree. How can I see so noble a creature destroyed by misery without feeling the most poignant grief?</p>
+            <p>There's the <a
+              href="https://webarchive.nationalarchives.gov.uk/20180512233606/https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/673759/T1__ET__Guidance_01_2018__12.01_.pdf">
+              guidance document</a> that outlines the criteria (pp 38-40). It asked me to choose 1 key, and 2 mandatory criteria. These are the ones that I picked, with the example of how to achieve them. The Key 2 is given so that you can understand that the guidance clearly distinguished between somebody with a profile, and somebody who's concerned with innovation.</p>
             
-            <p>He is so gentle, yet so wise; his mind is so cultivated, and when he speaks, although his words are culled with the choicest art, yet they flow with rapidity and  <a href="/open-source/gutenberg">unparalleled eloquence</a>.</p>
             
-            <p>Such <strong>words</strong>, you may imagine, strongly excited my curiosity;</p>
-            but the <em>paroxysm</em> of grief that had seized the stranger overcame
-            his weakened powers, and many hours of repose and tranquil
-            <span class="tm">conversation</span> were necessary to restore his <span class="tm2">composure</span>.
+            <div class="Criterion">
+              <h3 id="img-srcimgideasvg-altidea-icon-styleheight2rem--key-1">
+                <img alt="idea icon" style="height:2rem" data-io>
+                <noscript><img alt="idea icon" style="height:2rem" src="/open-source/pages/index/img/idea.svg"></noscript> Key 1
+              </h3>
+            
+              <p>Provide two or more examples of innovation in the digital technology sector as a founder of a digital technology sector company or an employee working in a new digital field or concept that must be clearly evidenced (e.g. patent application).</p>
+            
+              <ul>
+                <li>If you are an employee working in a new digital field or concept, this must be clearly demonstrated (for example by providing a patent application).</li>
+              </ul>
+            </div>
+            
+            <p>OR (not chosen)</p>
+            
+            <div class="Criterion" style="opacity:0.65">
+              <h3 id="img-srcimgcollaborationsvg-altcollaboration-icon-styleheight2rem--key-2">
+                <img alt="collaboration icon" style="height:2rem" data-io>
+                <noscript>
+                  <img alt="collaboration icon" style="height:2rem" src="/open-source/pages/index/img/collaboration.svg">
+                </noscript> Key 2
+              </h3>
+            
+              <p>Proof of recognition for work outside your immediate occupation that has contributed to the advancement of the sector (e.g. evidence that you have gone beyond your day to day profession to engage in an activity that contributes to the advancement of the sector).</p>
+            
+              <ul>
+                <li>Your StackOverflow profile showing significant contribution to discussions around code;</li>
+                <li>Evidence of contributions to an Open Source project;</li>
+                <li>Your GitHub profile demonstrating active participation in a collaborative project;</li>
+                <li>A link to one or more videos of talks or conferences that have had a significant viewership;</li>
+                <li>An op-ed or news article that exemplifies thought leadership, evidence of mentorship.</li>
+                <li>Evidence of sharing or teaching skills, such as mentoring if at a workplace.</li>
+              </ul>
+            </div>
+            
+            <hr />
+            
+            <div class="Criterion">
+              <h3 id="img-srcimgpositivedynamicsvg-altpositive-dynamic-icon-styleheight2rem--qualifying-2">
+                <img alt="positive dynamic icon" style="height:2rem" data-io>
+                <noscript>
+                  <img alt="positive dynamic icon" style="height:2rem" src="/open-source/pages/index/img/positive_dynamic.svg">
+                </noscript> Qualifying 2
+              </h3>
+            
+              <p>Have been recognised as having the potential to be a world leading talent in the digital technology sector.</p>
+            
+              <ul>
+                <li>You led the growth of a company or product, as evidenced by a letter from a co-founder, supervisor or eminent colleague describing your work, or as evidenced by news clippings, lines of code or similar evidence of your choice.</li>
+              </ul>
+            </div>
+            
+            <div class="Criterion">
+              <h3 id="img-srcimgreadingsvg-altreading-icon-styleheight2rem--qualifying-3">
+                <img alt="reading icon" style="height:2rem" data-io>
+                <noscript><img alt="reading icon" style="height:2rem" src="/open-source/pages/index/img/reading.svg"></noscript> Qualifying 3
+              </h3>
+            
+              <p>Have undergone continuous learning / mastery of new digital skills (commercial or technical) throughout your career.</p>
+            
+              <ul>
+                <li>Evidence of having continuously updated technical or commercial skills showing clear progression and achievement. This can be in the form of various projects or courses completed (whether at university or independently), which demonstrate a clear progression either in depth or breadth;</li>
+              </ul>
+            </div>
+            
+            <hr />
+            
+            <p>As you can see, nowhere the guidance explicitly mentions, that I must have had a profile or been known to the community. As I already said above, if I wanted to work on software by implementing and documenting it, and releasing to Open Source, while providing evidence for that in my application, it should had been perfectly acceptable for the application because it's discriminatory otherwise: you cannot ask people for one thing, and then judge them for another. The simple definition of "talent" is as follows: <span class="tm">natural aptitude or skill</span>, which is logical for the Tier 1 Exceptional <strong>Talent</strong> visa. Moreover, the guidance says:</p>
+            
+            <blockquote class="b-r">
+              Applicants who choose to apply under the Exceptional Promise criteria are likely to be earlier in their career, and therefore have yet to establish a track record in innovation. This means that they might not have the same levels of experience as those that would be endorsed via the Exceptional Talent criteria, however they will need to be able to demonstrate the potential to be a world leader in digital technology through their <strong>skills</strong> and <strong>achievements</strong> thus far.
+            </blockquote>
+            
+            <p>There's a huge role that an endorsing body should play for young independent developers. After graduating from university, or exiting a career path of working in industry, one will find herself totally alone. The Open Source "community" is imaginary as it's not an official social institute. There are corporations like GitHub, or NPM that supposedly represent Open Source, but these are private companies, in the same way that all conferences are organised for profit by also private companies that dictate their own rules. Interestingly, when you go to <span class="tm">npm.community</span>, you will find the following notice: <em>The npm.community forum is now moving into archived mode.</em> The only place anyone can go to is like Reddit. Therefore, if a government is setting up endorsing bodies like Tech Nation, it is their job to provide OFFICIAL public channels that would allow for recognition of work and skill of Open Source developers. There's a huge gap between unorganized internet forums, and an official Open Source program. Yet, Tech Nation is a negligent and hostile organisation that only abuses developers instead by picking on the lack of their "community profile", without appreciating any of this.</p>
             
             <p class="SectionBreak">
               <a title="Back To Top" href="#top">
@@ -204,6 +309,83 @@ a.join("\n "),"but supports alternatives."):console.log("\ud83d\udcbd Browser su
                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='13'/%3E" data-io>
                 <noscript><img alt="section break" src="/open-source/section-breaks/2.svg"></noscript></a>
             </p>
+            
+            <h2 id="wtfpl">WTFPL</h2>
+            
+            <p>Tech Nation think they have the <span class="tm">WTFPL</span> license when processing applications, since they are not held accountable to anyone because of the number of people applying to work in technology. The <a href="https://medium.com/@art_deco/2654d6cdc43f#9925">blog post</a> (see top) describes how their Senior Program Manager hijacked my application, and made a decision herself, without any knowledge in the field, because she knew nobody would want to investigate a case of a single developer against the whole of Tech Nation. She's crazy. <a href="https://drive.google.com/file/d/163OkaEen2bIsYQSgqUXzo7LpxZEHj6jy/view">The review</a> she produced is full of <a href="https://www.towergateinsurance.co.uk/liability-insurance/cognitive-biases">cognitive biases</a>:</p>
+            
+            <h3 id="i-bandwagon-effect">I. Bandwagon Effect</h3>
+            
+            <blockquote class="b-r">
+              Believing or doing something because people around you believe or do it.
+            </blockquote>
+            
+            <p>She demands of me that my tools must be popular, however the point of showing them to Tech Nation, was to demonstrate that I prepared infrastructure for my company, that will help me deliver new quality software quickly. Popularity is not a measure of skill. If a million people download certain software, it doesn't mean that it's made up to the highest standard. An endorsing body MUST not be jumping on the usage count bandwagon, while completely skipping the evaluation of the skill required to make those packages.</p>
+            
+            <h3 id="-ii-dunning-kruger-effect"> II. Dunning-Kruger Effect</h3>
+            
+            <blockquote class="b-r">
+              Unskilled individuals overestimating their abilities and experts underestimating theirs.
+            </blockquote>
+            
+            <p>The manager is not an expert in Computer Science and doesn't know anything about software development. Yet, because she think she's seen some number of applications, she can make the decision herself. It is clear from the wording "used a number of frameworks" that she doesn't know what she's talking about, overestimating her ability in processing of the application. Moreover, she says there's no link to the GitHub profile, or that 62 NPM packages is not a track records, which clearly shows that she's not an expert.</p>
+            
+            <h3 id="iii-confirmation-bias">III. Confirmation Bias</h3>
+            
+            <blockquote class="b-r">
+              Seeking and prioritising information that confirms your existing beliefs.
+            </blockquote>
+            
+            <p>The review was written in response to a request for a review which was sent after the accuracy of the initial decision was questioned. During a meeting with the manager, she verbally expressed a bias, by saying that "thousands of people have done amazing things by younger age", and that Tech Nation will "review the decision but cannot guarantee an endorsement". Language like that clearly demonstrate a prejudice as it is negative: for example, she could've just said, "sir, sorry for such negligent errors, we'll do a review and I hope it'll fix the situation for you".</p>
+            
+            <p class="SectionBreak">
+              <a title="Back To Top" href="#top">
+                <img alt="section break"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='9'/%3E" data-io>
+                <noscript><img alt="section break" src="/open-source/section-breaks/3.svg"></noscript></a>
+            </p>
+            
+            <h2 id="action">Action</h2>
+            
+            <p>What's the point of this website? It is to provide a place where the Open Source community can agree with the points raised and put pressure on <em>Tech Nation</em> to accept its fault and apologize to everyone. There are a number of ways to help:</p>
+            
+            <div class="b-B">
+              <div class="b-xq b-yb">
+                <img class="ImageHolder b-t" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 510px,(max-width: 1199.8px) 330px,398px" alt="art deco london office" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3264' height='2448'/%3E">
+                <noscript>
+                  <picture>
+                    <source
+                      srcset="pages/index/img/art-deco-london-1140.webp 1140w,pages/index/img/art-deco-london-768.webp 768w,pages/index/img/art-deco-london-576.webp 576w,pages/index/img/art-deco-london-319.webp 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 510px,(max-width: 1199.8px) 330px,398px"
+                      type="image/webp">
+                    <img class="b-t" onLoad="webploaded(this)" alt="art deco london office" src="/open-source/pages/index/img/art-deco-london-1140.jpg" srcset="pages/index/img/art-deco-london-1140.jpg 1140w,pages/index/img/art-deco-london-768.jpg 768w,pages/index/img/art-deco-london-576.jpg 576w,pages/index/img/art-deco-london-319.jpg 319w" sizes="(max-width: 575.8px) 100vw,(max-width: 991.8px) 510px,(max-width: 1199.8px) 330px,398px">
+                  </picture>
+                </noscript>
+              </div>
+              <div class="b-D">
+                <ol>
+                  <li>Sign the open letter by Art Deco that summarises the situations by simply signing up with GitHub/LinkedIn.</li>
+                  <li>Create you own letter, by submitting a pull request to this repository.</li>
+                  <li>Send <a href="https://opencollective.com/nodetools">financial aid</a> on Open Collective until the situation has been resolved.</li>
+                </ol>
+                <p>Thank you all very much. My life and future of an Open Source company in London really is in your hands right now.</p>
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
           </div>
         </div>
       </div>

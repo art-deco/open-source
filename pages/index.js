@@ -8,6 +8,8 @@ export const index = {
     image: '/img/logo.jpg',
   },
   links: {
+    biases: 'https://www.towergateinsurance.co.uk/liability-insurance/cognitive-biases',
+    medium: 'https://medium.com/@art_deco/2654d6cdc43f#9925',
     mike: 'https://drive.google.com/file/d/1t5fjvy33akgmDs313kOKakxg1-jKnVpe/view',
     jake: 'https://drive.google.com/file/d/1AHa1o_dvtBOeyy9gbhbiXQgkRPVyVXiO/view',
     mat: 'https://drive.google.com/file/d/1jxzgrv3_iJlB94eZawnz-EeQXRe3Lm_J/view',
@@ -30,6 +32,14 @@ export const index = {
 
     data_protection: 'https://docs.google.com/document/d/1oi6zaA2iSGx8BnDN2uStL0WT7Ao9zt9wpUVcsmKp7cY/view',
   },
+}
+
+/**
+ * @type {import('splendid').Page}
+ */
+export const letter = {
+  title: 'Letter of Claim',
+  seo: 'The letter of claim against Tech Nation with the outline of the timeline and allegations for negligence to be submitted to court.',
 }
 
 /**

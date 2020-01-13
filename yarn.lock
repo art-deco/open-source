@@ -80,12 +80,7 @@
   resolved "https://registry.yarnpkg.com/@zoroaster/mask/-/mask-2.3.0.tgz#57d169417e09e481efafccbffdd93cef919ec5e6"
   integrity sha512-fufal06pS/SYhOKHCmoFQ+PjhQwsCwMr2h0D2xeiVaXstaWHJVEiLg4+BU/KCmOOzLXLKikf81ca4zFXip7ScQ==
 
-alamode@^3.0.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/alamode/-/alamode-3.2.0.tgz#ee79dcf2483b5e28e9aac8cd0dfdc692aa333ca5"
-  integrity sha512-jDV6kYpIf9jHJUre1OOotW8EM2Qy58S/eOks2MWhjNz2xJQdEfyzFKbcdaZowC8sk5DKxsnapf/mZNE53B3haQ==
-
-alamode@^3.3.0:
+alamode@^3.0.0, alamode@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/alamode/-/alamode-3.3.0.tgz#5a73ebb8eae847934f747d67c2680698061b7bbe"
   integrity sha512-/Xi0rZ0HAyobAIi8DJQMeFF3kRrr15PGuYRwvxmQaOqSO3WJgXOsmhL6sZQuvD/okZztzujMxMA+21WOD2rYyQ==
@@ -142,9 +137,9 @@ good-listener@^1.2.2:
     delegate "^3.1.2"
 
 handlebars@^4.5.3:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.6.0.tgz#33af6c3eda930d7a924f5d8f1c6d8edc3180512e"
-  integrity sha512-i1ZUP7Qp2JdkMaFon2a+b0m5geE8Z4ZTLaGkgrObkEd+OkUKyRbRWw4KxuFCoHfdETSY1yf9/574eVoNSiK7pw==
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.1.tgz#052bd2618964dcb8aebad0940bfeb2d8d1cfbfde"
+  integrity sha512-2dd6soo60cwKNJ90VewNLIzdZPR/E2YhszOTgHpN9V0YuwZk7x33/iZoIBnASwDFVHMY7iJ6NPL8d9f/DWYCTA==
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -204,10 +199,10 @@ source-map@^0.6.1, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-splendid@^1.16.9:
-  version "1.16.9"
-  resolved "https://registry.yarnpkg.com/splendid/-/splendid-1.16.9.tgz#0e5876d953047874c6bc453f6ee048ea287e71ec"
-  integrity sha512-GhOMj+vES/Jx5U5qVVDNpcslvYw1A9GOGfo0O2teL7ICpLCuh5JIRk5uMhyn5hPBENp96cit/wBD501HPSJgGw==
+splendid@^1.16.10:
+  version "1.16.10"
+  resolved "https://registry.yarnpkg.com/splendid/-/splendid-1.16.10.tgz#9e8d218a9b1a0973eaddf779118f8bccce1a396b"
+  integrity sha512-8CuMsrfk08oeE+Gq8Frl1P8DOlVWFWeXCm7chNRI/sSbMsckmuUIHdS1arb5xaCqmag6o5t+qTIl9KnEbWqxfA==
   dependencies:
     "@externs/preact" "^1.2.9"
     "@idio/idio" "^1.1.2"
@@ -238,9 +233,9 @@ typal@^1.24.19:
   integrity sha512-/0ocJ/c5YBdYUT2Dh6l+/dCXHqifKF3QujYCgKLBBh9OC/6UzP2hcmiksGW68XPrjke8q0yhJfc7Jm+Kmpboaw==
 
 uglify-js@^3.1.4:
-  version "3.7.4"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.4.tgz#e6d83a1aa32ff448bd1679359ab13d8db0fe0743"
-  integrity sha512-tinYWE8X1QfCHxS1lBS8yiDekyhSXOO6R66yNOCdUJeojxxw+PX2BHAz/BWyW7PQ7pkiWVxJfIEbiDxyLWvUGg==
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.5.tgz#278c7c24927ac5a32d3336fc68fd4ae1177a486a"
+  integrity sha512-GFZ3EXRptKGvb/C1Sq6nO1iI7AGcjyqmIyOw0DrD0675e+NNbGO72xmMM2iEBdFbxaTLo70NbjM/Wy54uZIlsg==
   dependencies:
     commander "~2.20.3"
     source-map "~0.6.1"
