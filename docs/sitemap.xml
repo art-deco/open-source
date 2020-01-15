@@ -2,7 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://art-deco.github.io/open-source//index.html</loc>
-    <lastmod>2020-01-13</lastmod>
+    <lastmod>2020-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://art-deco.github.io/open-source//open-letter.html</loc>
+    <lastmod>2020-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://art-deco.github.io/open-source//personal-statement.html</loc>
+    <lastmod>2020-01-15</lastmod>
   </url>
   <url>
     <loc>https://art-deco.github.io/open-source//letter-of-claim.html</loc>
