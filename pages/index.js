@@ -12,6 +12,15 @@ export const index = {
 /**
  * @type {import('splendid').Page}
  */
+export const discussion = {
+  title: 'Discussion',
+  seo: 'Open Source Vs Tech Nation Discussion',
+}
+
+
+/**
+ * @type {import('splendid').Page}
+ */
 export const openLetter = {
   title: 'Open Letter',
   file: 'open-letter',
