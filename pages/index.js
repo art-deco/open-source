@@ -42,6 +42,14 @@ export const letter = {
 }
 
 /**
+ * @type {import('splendid').Page}
+ */
+export const documents = {
+  title: 'Documents',
+  seo: 'The list of documents used during Exceptional Talent Tier 1 visa process.',
+}
+
+/**
  * A subdirectory with more pages should be exported as a
  * string constant.
  */
