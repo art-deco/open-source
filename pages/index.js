@@ -55,6 +55,16 @@ export const documents = {
   seo: 'The list of documents used during Exceptional Talent Tier 1 visa process.',
 }
 
+
+/**
+ * @type {import('splendid').Page}
+ */
+export const privacy = {
+  title: 'Privacy Policy',
+  file: 'privacy-policy',
+}
+
+
 /**
  * A subdirectory with more pages should be exported as a
  * string constant.
