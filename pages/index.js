@@ -24,10 +24,7 @@ export const discussion = {
 export const openLetter = {
   title: 'Open Letter',
   file: 'open-letter',
-  seo: 'An open letter against Tech Nation\'s unethical practices for Tier 1 visa processing and complete lack of understanding of struggle of Open Source developers.',
-  og: {
-    image: '/img/logo.jpg',
-  },
+  seo: 'An open letter against @TechNation\'s unethical practices for Tier 1 visa processing and complete lack of understanding of struggle of Open Source developers.',
 }
 
 

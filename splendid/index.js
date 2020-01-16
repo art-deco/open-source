@@ -7,6 +7,9 @@ const config = {
       replacement: '[Art Deco™](https://www.artd.eco)',
     },
   ],
+  og: {
+    image: 'img/reflex8.jpg',
+  },
   pages: '../pages',
   elements: ['elements', '../help/elements'],
   blocks: ['blocks', '../help/blocks'],

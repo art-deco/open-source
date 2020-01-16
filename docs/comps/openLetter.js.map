@@ -2,17 +2,36 @@
   "version": 3,
   "file": "docs/comps/openLetter.js",
   "lineCount": 3,
-  "mappings": "AACA,IAAMA,GAAa,EAAnB,CAMMC,GAAe,CACnB,eAAgBC,CADG,CAEnB,iBAAkBC,CAFC,CANrB,CAWMC,GAAKC,CAAA,EAGEC;CAAC,CACZC,IAAK,gBADO,CAEZC,GAAI,OAFQ,CAGZC,MAAO,CACLC,IAAK,yDADA,CAELJ,EAAM,CAAA,CAFD,CAGLK,UAAW,WAHN,CAHK,CAADL,CASb,CACEC,IAAK,cADP,CAEEC,GAAI,OAFN,CAGEC,MAAO,CACLG,EAAO,UADF,CAELC,KAAM,aAFD,CAHT,CATaP,CAiBbQ,QAAA,CAAa,QAAA,CAAC,CAAD,CAA4C,CAAzC,IAAAP,EAAF,CAAE,IAAA,CAAKC,EAAP,CAAO,GAAL,CAASC,EAAA,IAAA,EAAA,GAAX,CAAW,MAAA,CAAQ,EAAR,CAAX,CAAW,MAAT,CAAqBM,EAAA,IAAA,EAAA,GAAvB,CAAuB,SAAA,CAAW,EAAX,CAAvB,CAAuB,SAArB,CACRC,EAAOf,EAAA,CAAaM,CAAb,CADC,CAERU,EAAQD,CAAAC,MAARA,EAAuB,cAAAC,KAAA,CAAoBF,CAAAG,SAAA,EAApB,CAAvBF,EAA+D,CAACG,CAAAC,cAAA,CAAwBL,CAAxB,CACtEP,EAAAa,EAAA,CAAiB,CAAEC,EAAO,eAAT,CAA0B,EAAAC,QAAM,CAACC,CAAD,CAAa,CAC5D,MAAOC,EAAA,CAAgB1B,EAAA,CAAWyB,CAAX,CAAhB,CADqD,CAA7C,CAILjB,EAAAmB,MAAAC,CAAS,GAATA,CACZd,QAAA,CAAY,QAAA,CAACe,CAAD,CAAQ,CACZ,IAAA,EAAiBC,CAAA,CAAKD,CAAL,CAAStB,CAAT,CAAjB,CAAEwB,EAAA,CAAA,OAAF,CAAUC,EAAA,CAAA,EAChB;GAAKA,CAAL,CAAA,CACA,IAAMC,EAAmD,CAAE1B,IAAAA,CAAF,CAAOC,GAAIqB,CAAX,CAAeZ,MAAAA,CAAf,CAAzD,CACIiB,CACJF,EAAAG,OAAA,CAAYC,QAAA,EAAM,CAEhB,MADAF,EACA,CADOG,CAAA,CAAMJ,CAAN,CAAkBjB,CAAlB,CAAwBkB,CAAxB,CAA8BF,CAA9B,CAAkCD,CAAlC,CAA0CtB,CAA1C,CAAiDM,CAAjD,CADS,CAIlBiB,EAAAG,OAAA7B,EAAA,CAAiB2B,CACjB7B,GAAAkC,QAAA,CAAWN,CAAX,CARA,CAFkB,CAApB,CARuD,CAAzD;",
+  "mappings": "AAIe,QAAMA,EAAN,EAAA,EAAMA,CACnB,KAAA,CAAA,QAAa,CAACC,CAAD,CAAK,CAChBC,CAAA,CAAU,mEAAV,CAA+ED,CAA/E,CADgB,CAGlB,EAAA,UAAA,OAAAE,CAAAA,QAAM,EAAG,CACP,IAAMC,EAAIC,QAAAC,cAAA,CAAuB,QAAvB,CACVF,EAAAG,IAAA,CAAQ,iEACRH,EAAAI,OAAA,CAAWC,QAAQ,EAAG,CACpBJ,QAAAK,eAAA,CAAwB,YAAxB,CAAAC,UAAA,CAAkD,EAClDC,OAAA,SAAA,CAAmB,CACjB,UAAa,YADI,CAAnB,CAFoB,CAMtBP,SAAAQ,KAAAC,YAAA,CAA0BV,CAA1B,CACA,OAAQW,EAAA,CAAE,KAAF,CAAQ,CAAC,GAAK,YAAN,CAAR,CAVD,C,CCPX,IAAMC,GAAa,EAAnB,CAOMC,GAAe,CACnB,eAAgBC,CADG,CAEnB,WAAcC,CAFK,CAGnB,iBAAkBC,CAHC,CAPrB,CAaMC,GAAKC,CAAA,EAGEC;CAAC,CACZC,IAAK,gBADO,CAEZC,GAAI,cAFQ,CAGZC,MAAO,CACLC,IAAK,yDADA,CAELJ,EAAM,CAAA,CAFD,CAGLK,UAAW,WAHN,CAHK,CAADL,CASb,CACEC,IAAK,cADP,CAEEC,GAAI,OAFN,CAGEC,MAAO,CACLG,EAAO,UADF,CAELC,KAAM,aAFD,CAHT,CATaP,CAiBb,CACEC,IAAK,YADP,CAEEC,GAAI,YAFN,CAjBaF,CAqBbQ,QAAA,CAAa,QAAA,CAAC,CAAD,CAA4C,CAAzC,IAAAP,EAAF,CAAE,IAAA,CAAKC,EAAP,CAAO,GAAL,CAASC,EAAA,IAAA,EAAA,GAAX,CAAW,MAAA,CAAQ,EAAR,CAAX,CAAW,MAAT,CAAqBM,EAAA,IAAA,EAAA,GAAvB,CAAuB,SAAA,CAAW,EAAX,CAAvB,CAAuB,SAArB,CACRC,EAAOhB,EAAA,CAAaO,CAAb,CADC,CAERU,EAAQD,CAAAC,MAARA,EAAuB,cAAAC,KAAA,CAAoBF,CAAAG,SAAA,EAApB,CAAvBF,EAA+D,CAACG,CAAAC,cAAA,CAAwBL,CAAxB,CACtEP,EAAAa,EAAA,CAAiB,CAAEC,EAAO,eAAT,CAA0B,EAAAC,QAAM,CAACC,CAAD,CAAa,CAC5D,MAAOC,EAAA,CAAgB3B,EAAA,CAAW0B,CAAX,CAAhB,CADqD,CAA7C,CAILjB,EAAAmB,MAAAC,CAAS,GAATA,CACZd,QAAA,CAAY,QAAA,CAACe,CAAD,CAAQ,CACZ,IAAA;AAAiBC,CAAA,CAAKD,CAAL,CAAStB,CAAT,CAAjB,CAAEwB,EAAA,CAAA,OAAF,CAAUC,EAAA,CAAA,EAChB,IAAKA,CAAL,CAAA,CACA,IAAMC,EAAmD,CAAE1B,IAAAA,CAAF,CAAOC,GAAIqB,CAAX,CAAeZ,MAAAA,CAAf,CAAzD,CACIiB,CACJF,EAAA9C,OAAA,CAAYiD,QAAA,EAAM,CAEhB,MADAD,EACA,CADOE,CAAA,CAAMH,CAAN,CAAkBjB,CAAlB,CAAwBkB,CAAxB,CAA8BF,CAA9B,CAAkCD,CAAlC,CAA0CtB,CAA1C,CAAiDM,CAAjD,CADS,CAIlBiB,EAAA9C,OAAAoB,EAAA,CAAiB2B,CACjB7B,GAAAiC,QAAA,CAAWL,CAAX,CARA,CAFkB,CAApB,CARuD,CAAzD;",
   "sources": [
+    "/splendid/components/signatures.jsx",
     "/splendid/comps/openLetter.js"
   ],
   "sourcesContent": [
-    "import makeClassGetter from './__mcg'\nconst renameMaps = {  }\nimport { Component, render, h } from '@externs/preact'\nimport { makeIo, init, start } from './__competent-lib'\nimport GithubBadge from '../components/github-badge.jsx'\nimport SocialButtons from 'splendid/build/components/social-buttons'\n\nconst __components = {\n  'github-badge': GithubBadge,\n  'social-buttons': SocialButtons,\n}\n\nconst io = makeIo()\n\n/** @type {!Array<!preact.PreactProps>} */\nconst meta = [{\n  key: 'social-buttons',\n  id: 'c2e09',\n  props: {\n    url: 'https://art-deco.github.io/open-source/open-letter.html',\n    meta: true,\n    className: 'b-xq b-Hk',\n  },\n},\n{\n  key: 'github-badge',\n  id: 'ce823',\n  props: {\n    owner: 'art-deco',\n    name: 'open-source',\n  },\n}]\nmeta.forEach(({ key, id, props = {}, children = [] }) => {\n  const Comp = __components[key]\n  const plain = Comp.plain || (/^\\s*class\\s+/.test(Comp.toString()) && !Component.isPrototypeOf(Comp))\n  props.splendid = { mount: '/open-source/', addCSS(stylesheet) {\n    return makeClassGetter(renameMaps[stylesheet])\n  } }\n\n  const ids = id.split(',')\n  ids.forEach((Id) => {\n    const { parent, el } = init(Id, key)\n    if (!el) return\n    const renderMeta = /** @type {_competent.RenderMeta} */ ({ key, id: Id, plain })\n    let comp\n    el.render = () => {\n      comp = start(renderMeta, Comp, comp, el, parent, props, children, { render, Component, h })\n      return comp\n    }\n    el.render.meta = renderMeta\n    io.observe(el)\n  })\n})\n"
+    "import { h } from '@externs/preact'\nimport { loadStyle } from '@lemuria/load-scripts'\n/* eslint-env browser */\n\nexport default class Comments {\n  static 'load'(cb) {\n    loadStyle('https://art-deco.github.io/open-source.artdeco.app/signatures.css', cb)\n  }\n  render() {\n    const s = document.createElement('script')\n    s.src = 'https://art-deco.github.io/open-source.artdeco.app/signature.js'\n    s.onload = function() {\n      document.getElementById('preact-div').innerText = ''\n      window['comments']({\n        'container': 'preact-div',\n      })\n    }\n    document.body.appendChild(s)\n    return (h('div',{'id':\"preact-div\"}))\n  }\n  /**\n   *\n   * @param {Object} param0\n   * @param {Splendid} param0.splendid\n   */\n  async serverRender({ splendid }) {\n    splendid.export()\n    if (splendid.env != 'prod') {\n      splendid.script('node_modules://preact/dist/preact.min.js', false)\n      await splendid.addFile('node_modules://preact/dist/preact.min.js.map')\n    }\n    return (h('div',{'id':\"preact-div\"},`Loading signatures...`))\n  }\n}\n\n/**\n * @typedef {import('splendid')} Splendid\n */",
+    "import makeClassGetter from './__mcg'\nconst renameMaps = {  }\nimport { Component, render, h } from '@externs/preact'\nimport { makeIo, init, start } from './__competent-lib'\nimport GithubBadge from '../components/github-badge.jsx'\nimport Signatures from '../components/signatures.jsx'\nimport SocialButtons from 'splendid/build/components/social-buttons'\n\nconst __components = {\n  'github-badge': GithubBadge,\n  'signatures': Signatures,\n  'social-buttons': SocialButtons,\n}\n\nconst io = makeIo()\n\n/** @type {!Array<!preact.PreactProps>} */\nconst meta = [{\n  key: 'social-buttons',\n  id: 'c2e09,c2e091',\n  props: {\n    url: 'https://art-deco.github.io/open-source/open-letter.html',\n    meta: true,\n    className: 'b-xq b-Hk',\n  },\n},\n{\n  key: 'github-badge',\n  id: 'ce823',\n  props: {\n    owner: 'art-deco',\n    name: 'open-source',\n  },\n},\n{\n  key: 'signatures',\n  id: 'preact-div',\n}]\nmeta.forEach(({ key, id, props = {}, children = [] }) => {\n  const Comp = __components[key]\n  const plain = Comp.plain || (/^\\s*class\\s+/.test(Comp.toString()) && !Component.isPrototypeOf(Comp))\n  props.splendid = { mount: '/open-source/', addCSS(stylesheet) {\n    return makeClassGetter(renameMaps[stylesheet])\n  } }\n\n  const ids = id.split(',')\n  ids.forEach((Id) => {\n    const { parent, el } = init(Id, key)\n    if (!el) return\n    const renderMeta = /** @type {_competent.RenderMeta} */ ({ key, id: Id, plain })\n    let comp\n    el.render = () => {\n      comp = start(renderMeta, Comp, comp, el, parent, props, children, { render, Component, h })\n      return comp\n    }\n    el.render.meta = renderMeta\n    io.observe(el)\n  })\n})\n"
   ],
   "names": [
+    "Comments",
+    "cb",
+    "loadStyle",
+    "render",
+    "s",
+    "document",
+    "createElement",
+    "src",
+    "onload",
+    "s.onload",
+    "getElementById",
+    "innerText",
+    "window",
+    "body",
+    "appendChild",
+    "h",
     "renameMaps",
     "__components",
     "GithubBadge",
+    "Signatures",
     "SocialButtons",
     "io",
     "makeIo",
@@ -45,7 +64,6 @@
     "el",
     "renderMeta",
     "comp",
-    "render",
     "el.render",
     "start",
     "observe"
