@@ -4,16 +4,22 @@ import { Component, render, h } from '@externs/preact'
 import { makeIo, init, start } from './__competent-lib'
 import GithubBadge from '../components/github-badge.jsx'
 import SocialButtons from 'splendid/build/components/social-buttons'
+import Updates from '../components/updates.jsx'
 
 const __components = {
   'github-badge': GithubBadge,
   'social-buttons': SocialButtons,
+  'updates': Updates,
 }
 
 const io = makeIo()
 
 /** @type {!Array<!preact.PreactProps>} */
 const meta = [{
+  key: 'updates',
+  id: 'cc786',
+},
+{
   key: 'github-badge',
   id: 'ce823',
   props: {

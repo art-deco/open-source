@@ -1,5 +1,5 @@
-import { Component } from 'preact'
 import { loadStyle } from '@lemuria/load-scripts'
+import { Component } from 'preact'
 /* eslint-env browser */
 
 export default class Comments extends Component {
@@ -10,8 +10,8 @@ export default class Comments extends Component {
     const s = document.createElement('script')
     s.src = 'https://static.akashic.page/akashic.js'
     s.onload = () => {
-      document.getElementById('preact-div').innerText = ''
-      window['Akashic']['comments']({
+      window['Akashic']['updates']({
+        'container': 'preact-updates',
         'api_key': 'akashic',
         'privacy': 'https://art-deco.github.io/open-source/privacy-policy.html',
         'scope': '/open-source/',
@@ -19,7 +19,9 @@ export default class Comments extends Component {
       })
     }
     document.body.appendChild(s)
-    return (<div id="preact-div"/>)
+    return (<p>
+      Thanks for visiting this web-page. To be notified of updates, please subscribe to web-push notifications using this button. <span id="preact-updates" />
+    </p>)
   }
   /**
    *
@@ -33,7 +35,7 @@ export default class Comments extends Component {
       await splendid.addFile('node_modules://preact/dist/preact.min.js.map')
     }
     await splendid.addFile('service-worker.js')
-    return (<div id="preact-div">Loading comments...</div>)
+    return (<div>Loading widget...</div>)
   }
 }
 

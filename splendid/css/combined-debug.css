@@ -276,6 +276,9 @@ pre {
 .ml-3 {
   margin-left: 1rem !important;
 }
+.pt-2 {
+  padding-top: .5rem !important;
+}
 .mt-auto {
   margin-top: auto !important;
 }

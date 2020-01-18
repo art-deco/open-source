@@ -1,19 +1,38 @@
 {
   "version": 3,
   "file": "docs/comps/index.js",
-  "lineCount": 3,
-  "mappings": "AACA,IAAMA,EAAa,EAAnB,CAMMC,EAAe,CACnB,eAAgBC,CADG,CAEnB,iBAAkBC,CAFC,CANrB,CAWMC,EAAKC,CAAA,EAGEC;CAAC,CACZC,IAAK,cADO,CAEZC,GAAI,OAFQ,CAGZC,MAAO,CACLC,EAAO,UADF,CAELC,KAAM,aAFD,CAHK,CAADL,CAQb,CACEC,IAAK,gBADP,CAEEC,GAAI,OAFN,CAGEC,MAAO,CACLG,IAAK,yCADA,CAELN,EAAM,CAAA,CAFD,CAGLO,UAAW,WAHN,CAHT,CARaP,CAiBbQ,QAAA,CAAa,QAAA,CAAC,CAAD,CAA4C,CAAzC,IAAAP,EAAF,CAAE,IAAA,CAAKC,EAAP,CAAO,GAAL,CAASC,EAAA,IAAA,EAAA,GAAX,CAAW,MAAA,CAAQ,EAAR,CAAX,CAAW,MAAT,CAAqBM,EAAA,IAAA,EAAA,GAAvB,CAAuB,SAAA,CAAW,EAAX,CAAvB,CAAuB,SAArB,CACRC,EAAOf,CAAA,CAAaM,CAAb,CADC,CAERU,EAAQD,CAAAC,MAARA,EAAuB,cAAAC,KAAA,CAAoBF,CAAAG,SAAA,EAApB,CAAvBF,EAA+D,CAACG,CAAAC,cAAA,CAAwBL,CAAxB,CACtEP,EAAAa,EAAA,CAAiB,CAAEC,EAAO,eAAT,CAA0B,EAAAC,QAAM,CAACC,CAAD,CAAa,CAC5D,MAAOC,EAAA,CAAgB1B,CAAA,CAAWyB,CAAX,CAAhB,CADqD,CAA7C,CAILjB,EAAAmB,MAAAC,CAAS,GAATA,CACZd,QAAA,CAAY,QAAA,CAACe,CAAD,CAAQ,CACZ,IAAA,EAAiBC,CAAA,CAAKD,CAAL,CAAStB,CAAT,CAAjB,CAAEwB,EAAA,CAAA,OAAF,CAAUC,EAAA,CAAA,EAChB,IAAKA,CAAL,CAAA,CACA,IAAMC,EAAmD,CAAE1B,IAAAA,CAAF;AAAOC,GAAIqB,CAAX,CAAeZ,MAAAA,CAAf,CAAzD,CACIiB,CACJF,EAAAG,OAAA,CAAYC,QAAA,EAAM,CAEhB,MADAF,EACA,CADOG,CAAA,CAAMJ,CAAN,CAAkBjB,CAAlB,CAAwBkB,CAAxB,CAA8BF,CAA9B,CAAkCD,CAAlC,CAA0CtB,CAA1C,CAAiDM,CAAjD,CADS,CAIlBiB,EAAAG,OAAA7B,EAAA,CAAiB2B,CACjB7B,EAAAkC,QAAA,CAAWN,CAAX,CARA,CAFkB,CAApB,CARuD,CAAzD;",
+  "lineCount": 4,
+  "mappings": "AAKe,QAAMA,EAAN,EAAA,CAAA,MAAA,EAAA,MAAA,CAAA,IAAA,CAAA,SAAA,CAAA,EAAA,IAAA,CAAuBC,CAAAC,CAAjBF,CAAiBE,CAAAA,CAAAA,CAAjBF,EACnB,KAAA,CAAA,QAAa,CAACG,CAAD,CAAK,CAChBC,CAAA,CAAU,0CAAV,CAAsDD,CAAtD,CADgB,CAGlB;CAAA,UAAA,OAAAE,CAAAA,QAAM,EAAG,CACP,IAAMC,EAAIC,QAAAC,cAAA,CAAuB,QAAvB,CACVF,EAAAG,IAAA,CAAQ,wCACRH,EAAAI,OAAA,CAAWC,QAAA,EAAM,CACfC,MAAA,QAAA,QAAA,CAA6B,CAC3B,UAAa,gBADc,CAE3B,QAAW,SAFgB,CAG3B,QAAW,4DAHgB,CAI3B,MAAS,eAJkB,CAA7B,CADe,CASjBL,SAAAM,KAAAC,YAAA,CAA0BR,CAA1B,CACA,OAAQS,EAAA,CAAE,GAAF,CAAM,EAAN,CACN,8HADM,CACyHA,CAAA,CAAE,MAAF,CAAS,CAAC,GAAK,gBAAN,CAAT,CADzH,CAbD,C,CCRX,IAAMC,GAAa,EAAnB,CAOMC,GAAe,CACnB,eAAgBC,CADG,CAEnB,iBAAkBC,CAFC,CAGnB,QAAWC,CAHQ,CAPrB,CAaMC,GAAKC,CAAA,EAGEC;CAAC,CACZC,IAAK,SADO,CAEZC,GAAI,OAFQ,CAADF,CAIb,CACEC,IAAK,cADP,CAEEC,GAAI,OAFN,CAGEC,MAAO,CACLC,EAAO,UADF,CAELC,KAAM,aAFD,CAHT,CAJaL,CAYb,CACEC,IAAK,gBADP,CAEEC,GAAI,OAFN,CAGEC,MAAO,CACLG,IAAK,yCADA,CAELN,EAAM,CAAA,CAFD,CAGLO,UAAW,WAHN,CAHT,CAZaP,CAqBbQ,QAAA,CAAa,QAAA,CAAC,CAAD,CAA4C,CAAzC,IAAAP,EAAF,CAAE,IAAA,CAAKC,EAAP,CAAO,GAAL,CAASC,EAAA,IAAA,EAAA,GAAX,CAAW,MAAA,CAAQ,EAAR,CAAX,CAAW,MAAT,CAAqBM,EAAA,IAAA,EAAA,GAAvB,CAAuB,SAAA,CAAW,EAAX,CAAvB,CAAuB,SAArB,CACRC,EAAOhB,EAAA,CAAaO,CAAb,CADC,CAERU,EAAQD,CAAAC,MAARA,EAAuB,cAAAC,KAAA,CAAoBF,CAAAG,SAAA,EAApB,CAAvBF,EAA+D,CAAChC,CAAAmC,cAAA,CAAwBJ,CAAxB,CACtEP,EAAAY,EAAA,CAAiB,CAAEC,EAAO,eAAT,CAA0B,EAAAC,QAAM,CAACC,CAAD,CAAa,CAC5D,MAAOC,EAAA,CAAgB1B,EAAA,CAAWyB,CAAX,CAAhB,CADqD,CAA7C,CAILhB,EAAAkB,MAAAC,CAAS,GAATA,CACZb,QAAA,CAAY,QAAA,CAACc,CAAD,CAAQ,CACZ,IAAA,EAAiBC,CAAA,CAAKD,CAAL,CAASrB,CAAT,CAAjB,CAAEuB,EAAA,CAAA,OAAF;AAAUC,EAAA,CAAA,EAChB,IAAKA,CAAL,CAAA,CACA,IAAMC,EAAmD,CAAEzB,IAAAA,CAAF,CAAOC,GAAIoB,CAAX,CAAeX,MAAAA,CAAf,CAAzD,CACIgB,CACJF,EAAA3C,OAAA,CAAY8C,QAAA,EAAM,CAEhB,MADAD,EACA,CADOE,CAAA,CAAMH,CAAN,CAAkBhB,CAAlB,CAAwBiB,CAAxB,CAA8BF,CAA9B,CAAkCD,CAAlC,CAA0CrB,CAA1C,CAAiDM,CAAjD,CADS,CAIlBgB,EAAA3C,OAAAkB,EAAA,CAAiB0B,CACjB5B,GAAAgC,QAAA,CAAWL,CAAX,CARA,CAFkB,CAApB,CARuD,CAAzD;",
   "sources": [
+    "/splendid/components/updates.jsx",
     "/splendid/comps/index.js"
   ],
   "sourcesContent": [
-    "import makeClassGetter from './__mcg'\nconst renameMaps = {  }\nimport { Component, render, h } from '@externs/preact'\nimport { makeIo, init, start } from './__competent-lib'\nimport GithubBadge from '../components/github-badge.jsx'\nimport SocialButtons from 'splendid/build/components/social-buttons'\n\nconst __components = {\n  'github-badge': GithubBadge,\n  'social-buttons': SocialButtons,\n}\n\nconst io = makeIo()\n\n/** @type {!Array<!preact.PreactProps>} */\nconst meta = [{\n  key: 'github-badge',\n  id: 'ce823',\n  props: {\n    owner: 'art-deco',\n    name: 'open-source',\n  },\n},\n{\n  key: 'social-buttons',\n  id: 'c7d80',\n  props: {\n    url: 'https://art-deco.github.io/open-source/',\n    meta: true,\n    className: 'b-xq b-Hk',\n  },\n}]\nmeta.forEach(({ key, id, props = {}, children = [] }) => {\n  const Comp = __components[key]\n  const plain = Comp.plain || (/^\\s*class\\s+/.test(Comp.toString()) && !Component.isPrototypeOf(Comp))\n  props.splendid = { mount: '/open-source/', addCSS(stylesheet) {\n    return makeClassGetter(renameMaps[stylesheet])\n  } }\n\n  const ids = id.split(',')\n  ids.forEach((Id) => {\n    const { parent, el } = init(Id, key)\n    if (!el) return\n    const renderMeta = /** @type {_competent.RenderMeta} */ ({ key, id: Id, plain })\n    let comp\n    el.render = () => {\n      comp = start(renderMeta, Comp, comp, el, parent, props, children, { render, Component, h })\n      return comp\n    }\n    el.render.meta = renderMeta\n    io.observe(el)\n  })\n})\n"
+    "import { h } from '@externs/preact'\nimport { loadStyle } from '@lemuria/load-scripts'\nimport { Component } from '@externs/preact'\n/* eslint-env browser */\n\nexport default class Comments extends Component {\n  static 'load'(cb) {\n    loadStyle('https://static.akashic.page/comments.css', cb)\n  }\n  render() {\n    const s = document.createElement('script')\n    s.src = 'https://static.akashic.page/akashic.js'\n    s.onload = () => {\n      window['Akashic']['updates']({\n        'container': 'preact-updates',\n        'api_key': 'akashic',\n        'privacy': 'https://art-deco.github.io/open-source/privacy-policy.html',\n        'scope': '/open-source/',\n        // 'host': 'http://localhost:5000',\n      })\n    }\n    document.body.appendChild(s)\n    return (h('p',{},\n      `Thanks for visiting this web-page. To be notified of updates, please subscribe to web-push notifications using this button. `,h('span',{'id':\"preact-updates\"}),\n    ))\n  }\n  /**\n   *\n   * @param {Object} param0\n   * @param {Splendid} param0.splendid\n   */\n  async serverRender({ splendid }) {\n    splendid.export()\n    if (splendid.env != 'prod') {\n      splendid.script('node_modules://preact/dist/preact.min.js', false)\n      await splendid.addFile('node_modules://preact/dist/preact.min.js.map')\n    }\n    await splendid.addFile('service-worker.js')\n    return (h('div',{},`Loading widget...`))\n  }\n}\n\n/**\n * @typedef {import('splendid')} Splendid\n */",
+    "import makeClassGetter from './__mcg'\nconst renameMaps = {  }\nimport { Component, render, h } from '@externs/preact'\nimport { makeIo, init, start } from './__competent-lib'\nimport GithubBadge from '../components/github-badge.jsx'\nimport SocialButtons from 'splendid/build/components/social-buttons'\nimport Updates from '../components/updates.jsx'\n\nconst __components = {\n  'github-badge': GithubBadge,\n  'social-buttons': SocialButtons,\n  'updates': Updates,\n}\n\nconst io = makeIo()\n\n/** @type {!Array<!preact.PreactProps>} */\nconst meta = [{\n  key: 'updates',\n  id: 'cc786',\n},\n{\n  key: 'github-badge',\n  id: 'ce823',\n  props: {\n    owner: 'art-deco',\n    name: 'open-source',\n  },\n},\n{\n  key: 'social-buttons',\n  id: 'c7d80',\n  props: {\n    url: 'https://art-deco.github.io/open-source/',\n    meta: true,\n    className: 'b-xq b-Hk',\n  },\n}]\nmeta.forEach(({ key, id, props = {}, children = [] }) => {\n  const Comp = __components[key]\n  const plain = Comp.plain || (/^\\s*class\\s+/.test(Comp.toString()) && !Component.isPrototypeOf(Comp))\n  props.splendid = { mount: '/open-source/', addCSS(stylesheet) {\n    return makeClassGetter(renameMaps[stylesheet])\n  } }\n\n  const ids = id.split(',')\n  ids.forEach((Id) => {\n    const { parent, el } = init(Id, key)\n    if (!el) return\n    const renderMeta = /** @type {_competent.RenderMeta} */ ({ key, id: Id, plain })\n    let comp\n    el.render = () => {\n      comp = start(renderMeta, Comp, comp, el, parent, props, children, { render, Component, h })\n      return comp\n    }\n    el.render.meta = renderMeta\n    io.observe(el)\n  })\n})\n"
   ],
   "names": [
+    "Comments",
+    "$jscomp.inherits",
+    "Component",
+    "cb",
+    "loadStyle",
+    "render",
+    "s",
+    "document",
+    "createElement",
+    "src",
+    "onload",
+    "s.onload",
+    "window",
+    "body",
+    "appendChild",
+    "h",
     "renameMaps",
     "__components",
     "GithubBadge",
     "SocialButtons",
+    "Updates",
     "io",
     "makeIo",
     "meta",
@@ -30,7 +49,6 @@
     "plain",
     "test",
     "toString",
-    "Component",
     "isPrototypeOf",
     "splendid",
     "mount",
@@ -45,7 +63,6 @@
     "el",
     "renderMeta",
     "comp",
-    "render",
     "el.render",
     "start",
     "observe"
