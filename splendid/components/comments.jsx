@@ -7,11 +7,10 @@ export default class Comments {
   }
   render() {
     const s = document.createElement('script')
-    s.src = 'https://static.akashic.page/comments.js'
-    s.onload = function() {
+    s.src = 'https://static.akashic.page/akashic.js'
+    s.onload = () => {
       document.getElementById('preact-div').innerText = ''
-      window['comments']({
-        // 'container': 'preact-div',
+      window['Akashic']['comments']({
         'api_key': 'akashic',
         'privacy': 'https://art-deco.github.io/open-source/privacy-policy.html',
         'scope': '/open-source/',
