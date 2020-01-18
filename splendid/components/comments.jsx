@@ -3,17 +3,19 @@ import { loadStyle } from '@lemuria/load-scripts'
 
 export default class Comments {
   static 'load'(cb) {
-    loadStyle('https://art-deco.github.io/open-source.artdeco.app/comments.css', cb)
+    loadStyle('https://static.akashic.page/comments.css', cb)
   }
   render() {
     const s = document.createElement('script')
-    s.src = 'https://art-deco.github.io/open-source.artdeco.app/comments.js'
+    s.src = 'https://static.akashic.page/comments.js'
     s.onload = function() {
       document.getElementById('preact-div').innerText = ''
       window['comments']({
-        'container': 'preact-div',
+        // 'container': 'preact-div',
+        'api_key': 'akashic',
+        'privacy': 'https://art-deco.github.io/open-source/privacy-policy.html',
         'scope': '/open-source/',
-        // 'host': 'https://open-source.artdeco.app',
+        // 'host': 'http://localhost:5000',
       })
     }
     document.body.appendChild(s)
