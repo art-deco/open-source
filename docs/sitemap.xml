@@ -2,14 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://art-deco.github.io/open-source//index.html</loc>
-    <lastmod>2020-01-18</lastmod>
+    <lastmod>2020-01-19</lastmod>
   </url>
   <url>
     <loc>https://art-deco.github.io/open-source//discussion.html</loc>
-    <lastmod>2020-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://art-deco.github.io/open-source//open-letter.html</loc>
     <lastmod>2020-01-16</lastmod>
   </url>
   <url>
@@ -25,7 +21,15 @@
     <lastmod>2020-01-16</lastmod>
   </url>
   <url>
+    <loc>https://art-deco.github.io/open-source//pull-request.html</loc>
+    <lastmod>2020-01-19</lastmod>
+  </url>
+  <url>
     <loc>https://art-deco.github.io/open-source//privacy-policy.html</loc>
     <lastmod>2020-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://art-deco.github.io/open-source//letters/open-letter.html</loc>
+    <lastmod>2020-01-19</lastmod>
   </url>
 </urlset>

@@ -29,7 +29,6 @@ const config = {
     jarvey: 'https://drive.google.com/file/d/14TqyjMPZQILzZQYJ49L9rtJFwEIvcTmI/view',
     changelog: 'https://drive.google.com/file/d/136IB127az5Gjx6WskvlcZuF58sXdZiE9/view',
     academy: 'https://drive.google.com/file/d/1K3sGf_yKHRJALHB6tjOzcjO0HEQq-kV_/view',
-    amigo_tools: 'https://drive.google.com/file/d/1oEwK3F1ppGPOTKXP3IytDgbnmR09DM81/view',
     decision: 'https://drive.google.com/file/d/1pRkl1xEJanrCJFKG1dl7UT_yG6eiApHz/view',
     review: 'https://drive.google.com/file/d/163OkaEen2bIsYQSgqUXzo7LpxZEHj6jy/view',
     younoodle: 'https://drive.google.com/file/d/16uY2L9i2rOzqEgFfJ_IcMSfzRYFD5Wcy/view',

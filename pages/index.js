@@ -17,17 +17,6 @@ export const discussion = {
   seo: 'Open Source Vs Tech Nation Discussion',
 }
 
-
-/**
- * @type {import('splendid').Page}
- */
-export const openLetter = {
-  title: 'Open Letter',
-  file: 'open-letter',
-  seo: 'An open letter against @TechNation\'s unethical practices for Tier 1 visa processing and complete lack of understanding of struggle of Open Source developers.',
-}
-
-
 /**
  * @type {import('splendid').Page}
  */
@@ -59,14 +48,21 @@ export const documents = {
 /**
  * @type {import('splendid').Page}
  */
+export const pr = {
+  title: 'Pull Request',
+  seo: 'How to create a pull request.',
+}
+
+/**
+ * @type {import('splendid').Page}
+ */
 export const privacy = {
   title: 'Privacy Policy',
   file: 'privacy-policy',
 }
 
-
 /**
  * A subdirectory with more pages should be exported as a
  * string constant.
  */
-// export const help = '~/help'
+export const letters = '~/letters'

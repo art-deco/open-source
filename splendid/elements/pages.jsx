@@ -2,13 +2,13 @@
  * @param {Object} props
  * @param {Splendid} props.splendid
  */
-export default function Pages({ splendid }) {
+export default function Pages({ splendid, dir }) {
   const { pages, page: { key } } = splendid
-  // navigation within the dir using ajax
-  const menuPages = pages.filter(({ dir }) => {
-    if (!dir) return true
+  const menuPages = pages.filter(({ dir: d }) => {
+    if (dir) return d == dir
+    if (!d) return true
   })
-  const ajax = (<ul className="AjaxNav">
+  const ajax = (<ul>
     {menuPages.map(({
       title, menu = title, url, menuUrl = url, file, key: k,
     }) => {
@@ -19,24 +19,7 @@ export default function Pages({ splendid }) {
     }
     )}
   </ul>)
-  // navigation between dirs
-  const dirPages = pages.filter(({ dir, index }) => {
-    return dir && index
-  })
-  const dir = (<ul>
-    {dirPages.map(({
-      title, menu = title, url, menuUrl = url,
-    }) => {
-      return (<li>
-        <a href={splendid.wrapSlash(menuUrl)}>{menu}</a>
-      </li>)
-    }
-    )}
-  </ul>)
-  return [
-    ajax,
-    dir,
-  ]
+  return ajax
 }
 
 /**
