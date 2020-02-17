@@ -2,10 +2,12 @@ import makeClassGetter from './__mcg'
 const renameMaps = {  }
 import { Component, render, h } from '@externs/preact'
 import { makeIo, init, start } from './__competent-lib'
+import AkashicEmails from '../components/akashic-emails.jsx'
 import GithubBadge from '../components/github-badge.jsx'
 import SocialButtons from 'splendid/build/components/social-buttons'
 
 const __components = {
+  'akashic-emails': AkashicEmails,
   'github-badge': GithubBadge,
   'social-buttons': SocialButtons,
 }
@@ -20,6 +22,13 @@ const meta = [{
     url: 'https://art-deco.github.io/open-source/privacy-policy.html',
     meta: true,
     className: 'b-xq b-Hk',
+  },
+},
+{
+  key: 'akashic-emails',
+  id: 'emails-div',
+  props: {
+    'api-key': 'akashic',
   },
 },
 {

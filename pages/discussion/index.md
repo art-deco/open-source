@@ -6,4 +6,4 @@
 
 You can leave your comments here.
 
-<comments />
+<comments api-key="akashic" />

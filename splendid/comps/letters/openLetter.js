@@ -2,11 +2,13 @@ import makeClassGetter from '../__mcg'
 const renameMaps = {  }
 import { Component, render, h } from '@externs/preact'
 import { makeIo, init, start } from '../__competent-lib'
+import AkashicEmails from '../../components/akashic-emails.jsx'
 import GithubBadge from '../../components/github-badge.jsx'
 import Signatures from '../../components/signatures.jsx'
 import SocialButtons from 'splendid/build/components/social-buttons'
 
 const __components = {
+  'akashic-emails': AkashicEmails,
   'github-badge': GithubBadge,
   'signatures': Signatures,
   'social-buttons': SocialButtons,
@@ -16,6 +18,13 @@ const io = makeIo()
 
 /** @type {!Array<!preact.PreactProps>} */
 const meta = [{
+  key: 'akashic-emails',
+  id: 'emails-div',
+  props: {
+    'api-key': 'akashic',
+  },
+},
+{
   key: 'github-badge',
   id: 'ce823',
   props: {

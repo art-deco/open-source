@@ -1,5 +1,5 @@
-var va={},wa={"github-badge":O,"social-buttons":Q},xa=L();
-[{key:"social-buttons",id:"cf97d",props:{url:"https://art-deco.github.io/open-source/privacy-policy.html",a:!0,className:"b-xq b-Hk"}},{key:"github-badge",id:"ce823",props:{i:"art-deco",name:"open-source"}}].forEach(function(a){var b=a.key,c=a.id,d=void 0===a.props?{}:a.props,h=void 0===a.children?[]:a.children,e=wa[b],p=e.plain||/^\s*class\s+/.test(e.toString())&&!I.isPrototypeOf(e);d.g={c:"/open-source/",j:function(g){return F(va[g])}};c.split(",").forEach(function(g){var l=K(g,b),n=l.parent,f=
-l.b;if(f){var k={key:b,id:g,plain:p},m;f.render=function(){return m=N(k,e,m,f,n,d,h)};f.render.a=k;xa.observe(f)}})});
+var ya={},za={"akashic-emails":S,"github-badge":V,"social-buttons":W},Aa=L();
+[{key:"social-buttons",id:"cf97d",props:{url:"https://art-deco.github.io/open-source/privacy-policy.html",b:!0,className:"b-xq b-Hk"}},{key:"akashic-emails",id:"emails-div",props:{"api-key":"akashic"}},{key:"github-badge",id:"ce823",props:{i:"art-deco",name:"open-source"}}].forEach(function(a){var b=a.key,c=a.id,d=void 0===a.props?{}:a.props,h=void 0===a.children?[]:a.children,e=za[b],p=e.plain||/^\s*class\s+/.test(e.toString())&&!I.isPrototypeOf(e);d.g={c:"/open-source/",j:function(g){return F(ya[g])}};
+c.split(",").forEach(function(g){var l=K(g,b),n=l.parent,f=l.a;if(f){var k={key:b,id:g,plain:p},m;f.render=function(){return m=N(k,e,m,f,n,d,h)};f.render.b=k;Aa.observe(f)}})});
 
 //# sourceMappingURL=privacy.js.map

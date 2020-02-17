@@ -2,11 +2,13 @@ import makeClassGetter from './__mcg'
 const renameMaps = {  }
 import { Component, render, h } from '@externs/preact'
 import { makeIo, init, start } from './__competent-lib'
+import AkashicEmails from '../components/akashic-emails.jsx'
 import Comments from '../components/comments.jsx'
 import GithubBadge from '../components/github-badge.jsx'
 import SocialButtons from 'splendid/build/components/social-buttons'
 
 const __components = {
+  'akashic-emails': AkashicEmails,
   'comments': Comments,
   'github-badge': GithubBadge,
   'social-buttons': SocialButtons,
@@ -16,6 +18,20 @@ const io = makeIo()
 
 /** @type {!Array<!preact.PreactProps>} */
 const meta = [{
+  key: 'comments',
+  id: 'c3002',
+  props: {
+    'api-key': 'akashic',
+  },
+},
+{
+  key: 'akashic-emails',
+  id: 'emails-div',
+  props: {
+    'api-key': 'akashic',
+  },
+},
+{
   key: 'github-badge',
   id: 'ce823',
   props: {
@@ -31,10 +47,6 @@ const meta = [{
     meta: true,
     className: 'b-xq b-Hk',
   },
-},
-{
-  key: 'comments',
-  id: 'preact-div',
 }]
 meta.forEach(({ key, id, props = {}, children = [] }) => {
   const Comp = __components[key]

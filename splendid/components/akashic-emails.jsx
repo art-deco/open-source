@@ -1,28 +1,24 @@
+import { Component } from 'preact'
 import { loadStyle } from '@lemuria/load-scripts'
 
-export default class Comments {
-  static get 'plain'() {
-    return true
-  }
+export default class Emails extends Component {
   static 'load'(cb) {
     loadStyle('https://static.akashic.page/comments.css', cb)
-  }
-  constructor(el) {
-    this.el = el
   }
   render({ 'api-key': apiKey, host }) {
     const s = document.createElement('script')
     s.src = 'https://static.akashic.page/akashic.js'
     s.onload = () => {
-      this.el.innerText = ''
-      window['Akashic']['comments']({
+      document.getElementById('emails-div').innerText = ''
+      window['Akashic']['emails']({
         'host': host,
         'api_key': apiKey,
-        'scope': '/open-source/',
-        'container': this.el.id,
+        'project': 'open-source',
+        'container': 'emails-div',
       })
     }
     document.body.appendChild(s)
+    return (<div id="emails-div"/>)
   }
   /**
    *
@@ -35,8 +31,7 @@ export default class Comments {
       splendid.script('node_modules://preact/dist/preact.min.js', false)
       await splendid.addFile('node_modules://preact/dist/preact.min.js.map')
     }
-    await splendid.addFile('service-worker.js')
-    return (<div>Loading comments...</div>)
+    return (<div id="emails-div">Loading widget...</div>)
   }
 }
 
